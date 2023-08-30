@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import {NextUIProvider} from "@nextui-org/react"
-import {BrowserProvider} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <NextUIProvider>
-    <BrowserProvider>
+    <BrowserRouter>
       <App/>
-    </BrowserProvider>
+    </BrowserRouter>
   </NextUIProvider>
 )
