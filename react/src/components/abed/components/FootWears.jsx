@@ -100,13 +100,13 @@ function FootWear() {
   <>
     <div className="text-left" >
         <h1 className="text-2xl font-mono">FOOT WEAR</h1>
-      <Link className="md:text-red-400 hover:text-red-600" href="#">View All</Link>
+        <a href="/footwear" className="md:text-red-400 hover:text-red-600">View All</a>
       
     </div>
   <Carousel responsive={responsive}>
     
     {Flist.map((item, id) => (
-       <NavLink to={`./singleproduct/${id}`}>
+      <a href={`/singleproduct/${id}`}>
   <div>
       <Card className="m-3" shadow="sm" key={item.id} isPressable onPress={() => console.log("item pressed")}>
         <CardBody className="overflow-visible p-0">
@@ -123,7 +123,7 @@ function FootWear() {
          </CardFooter>
        </Card>
        </div>
-       </NavLink>
+      </a>
      ))}
   </Carousel>
   </>

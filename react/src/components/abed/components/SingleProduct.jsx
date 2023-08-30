@@ -6,7 +6,7 @@ const SingleProduct = () =>{
     
     return (
             <>
-            <h1>Singlepage</h1>
+            <h1>Single product page</h1>
             </>
     )
     }

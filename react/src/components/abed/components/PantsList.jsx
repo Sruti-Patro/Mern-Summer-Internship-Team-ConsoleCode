@@ -103,13 +103,13 @@ function PantsList() {
     <>
     <div className="text-left" >
         <h1 className="text-2xl font-mono">TIGHTS</h1>
-      <Link className="md:text-red-400 hover:text-red-600" href="#">View All</Link>
+        <a href="/tights" className="md:text-red-400 hover:text-red-600">View All</a>
       
     </div>
   <Carousel responsive={responsive}>
     
     {Plist.map((item, id) => (
-      <NavLink to={`./singleproduct/${id}`}>
+      <a href={`/singleproduct/${id}`}>
   <div>
       <Card className="m-3" shadow="sm" key={Plist.id} isPressable onPress={() => console.log("item pressed")}>
         <CardBody className="overflow-visible p-0">
@@ -118,7 +118,7 @@ function PantsList() {
              width="100%"
              alt={item.title}
              src={item.img}
-     />
+            />
          </CardBody>
          <CardFooter className="text-small justify-between h-20">
            <b>{item.title}</b>
@@ -126,7 +126,7 @@ function PantsList() {
          </CardFooter>
        </Card>
        </div>
-       </NavLink>
+       </a>
      ))}
   </Carousel>
   </>
