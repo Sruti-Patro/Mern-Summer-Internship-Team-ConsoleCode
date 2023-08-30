@@ -1,8 +1,9 @@
 import { useParams} from 'react-router-dom';
 const SingleProduct = () =>{
     const { id } =useParams();
-    console.log({id})
+    console.log(`item clicked${id}`)
 
+    
     
     return (
             <>
