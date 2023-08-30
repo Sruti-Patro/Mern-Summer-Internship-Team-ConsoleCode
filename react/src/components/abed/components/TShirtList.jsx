@@ -101,14 +101,15 @@ function TShirtList() {
     <>
     <div className="text-left" >
         <h1 className="text-2xl font-mono">T-SHIRTS</h1>
-      <Link className="md:text-red-400 hover:text-red-600" href="#">View All</Link>
+      <a href="/tshirt" className="md:text-red-400 hover:text-red-600">View All</a>
       
     </div>
   <Carousel responsive={responsive}>
     
     {Tlist.map((item, id) => {
       return(
-      //  <NavLink to={`./singleproduct/${id}`}>    {/*add route to singleproduct page*/}
+        <a href={`/singleproduct/${id}`}>
+     
   <div>
    
       <Card className="m-3" key={Tlist.id} isPressable onPress={() => console.log("item pressed")}>
@@ -127,6 +128,7 @@ function TShirtList() {
        </Card>
 
        </div>
+       </a>
       //  </NavLink>
       )
       })}
