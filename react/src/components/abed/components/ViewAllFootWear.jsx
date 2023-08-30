@@ -201,8 +201,10 @@ function ViewAllFootWear() {
                 <HeroSlider/>
             
         <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
-          {Flist.map((item, index) => (
-            <Card className="m-7"shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+          {Flist.map((item, id) => (
+            <a href={`/singleproduct/${id}`}>
+              <div>
+            <Card className="m-7"shadow="sm" key={id} isPressable onPress={() => console.log("item pressed")}>
               <CardBody className="overflow-visible p-0">
               <Image
              isZoomed
@@ -216,6 +218,8 @@ function ViewAllFootWear() {
                 <p className="text-default-500">{item.price}</p>
               </CardFooter>
             </Card>
+            </div>
+            </a>
           ))}
         </div>
     </>
