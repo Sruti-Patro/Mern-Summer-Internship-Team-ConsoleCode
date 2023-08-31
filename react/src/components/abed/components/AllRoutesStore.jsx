@@ -4,7 +4,7 @@ import ProductPage from "../ProductPage"
 import ViewAllTshirt from "./ViewAllTshirt"
 import ViewAllPants from "./ViewAllPants"
 import ViewAllFootWear from "./ViewAllFootWear"
-function AllRoutes() {
+function AllRoutesStore() {
   return (
     <Routes>
       <Route path="/" element={<ProductPage/>}></Route>
@@ -17,4 +17,4 @@ function AllRoutes() {
   );
 }
 
-export default AllRoutes;
+export default AllRoutesStore;
