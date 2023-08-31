@@ -14,6 +14,7 @@ ul
   text-align: left;
 }
 .child {
+  background-color: white;
   display: inline-block;
   padding: 1rem 1rem;
   vertical-align: middle;

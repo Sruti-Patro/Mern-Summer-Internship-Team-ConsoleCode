@@ -48,10 +48,26 @@ function Maincart() {
     return( <>
     <div style={{padding: '20px'}}><h1>User Details</h1></div>
       <Address></Address> 
-      <div className="bot" style={{padding: '20px'}}>
+
+      <motion.div initial="hidden" animate="visible" variants={{
+      hidden: {
+        scale: .8,
+        opacity: 0
+      },
+      visible: {
+        scale: 1,
+        opacity: 1,
+        transition: {
+          delay: 4
+        }
+      },
+    }}>
+       <div className="bot" style={{padding: '20px'}}>
         <Button color="warning" variant="ghost"
         onClick={() => setActiveStep(activeStep + 1)}>Submit&Proceed</Button>
       </div>
+    </motion.div>
+      
        </>
     //should call the address
     );

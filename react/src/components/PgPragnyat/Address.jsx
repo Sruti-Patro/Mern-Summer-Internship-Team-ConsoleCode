@@ -151,16 +151,82 @@ function Add() {
         scale: 1,
         opacity: 1,
         transition: {
-          delay: 1
+          delay: 2
         }
       },
     }}>
        <div style={{padding: '20px'}}><FullName/></div>
     </motion.div>
+   
+    <div className="in" style={{padding: '20px'}}>
+<motion.div initial="hidden" animate="visible" variants={{
+      hidden: {
+        scale: .8,
+        opacity: 0
+      },
+      visible: {
+        scale: 1,
+        opacity: 1,
+        transition: {
+          delay: 2.5
+        }
+      },
+    }}>
+       <PhoneNumber/>
+    </motion.div>
+
+<motion.div initial="hidden" animate="visible" variants={{
+      hidden: {
+        scale: .8,
+        opacity: 0
+      },
+      visible: {
+        scale: 1,
+        opacity: 1,
+        transition: {
+          delay: 3
+        }
+      },
+    }}>
+       <PinCode/>
+    </motion.div>
+
+
+</div>
+
+
+<motion.div initial="hidden" animate="visible" variants={{
+      hidden: {
+        scale: .8,
+        opacity: 0
+      },
+      visible: {
+        scale: 1,
+        opacity: 1,
+        transition: {
+          delay: 3.5
+        }
+      },
+    }}>
+       <div style={{padding: '20px'}}><Email/></div>
+    </motion.div>
+   
+<motion.div initial="hidden" animate="visible" variants={{
+      hidden: {
+        scale: .8,
+        opacity: 0
+      },
+      visible: {
+        scale: 1,
+        opacity: 1,
+        transition: {
+          delay: 4
+        }
+      },
+    }}>
+       <div style={{padding: '20px'}}><Add/></div>
+    </motion.div>
     
-    <div className="in" style={{padding: '20px'}}><PhoneNumber/><PinCode/></div>
-    <div style={{padding: '20px'}}><Email/></div>
-    <div style={{padding: '20px'}}><Add/></div>
     </>
     
   )
