@@ -1,12 +1,12 @@
 export const RightEnd = [
     {
         title:"Cart",
-        url:"#",
+        url:"/cart",
         cName:"nav-links"
     },
     {
         title:"Sign Up",
-        url:"#",
+        url:"/sign",
         cName:"nav-links"
     },
 ];

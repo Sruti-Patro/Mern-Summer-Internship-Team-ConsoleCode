@@ -17,7 +17,7 @@ function HeroSlider() {
   }, [])
 
   return (
-    <div>
+    <div >
       <img width={1440} height={298} src={allImages[selectedImage]} /> <br />
       
     </div>

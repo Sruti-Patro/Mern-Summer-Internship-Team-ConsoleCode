@@ -1,32 +1,32 @@
 export const MenuList=[
     {
         title:"FITNESS",
-        url:"#f",
+        url:"/fitness",
         cName:"nav-links"
     },
     {
         title:"CARE",
-        url:"#ca",
+        url:"/care",
         cName:"nav-links"
     },
     {
         title:"MIND",
-        url:"#m",
+        url:"mind",
         cName:"nav-links"
     },
     {
         title:"STORE",
-        url:"#st",
+        url:"/store",
         cName:"nav-links"
     },
     {
         title:"CART",
-        url:"#c",
+        url:"/cart",
         cName:"nav-links-mobile"
     },
     {
         title:"SIGN-UP",
-        url:"#s",
+        url:"/sign",
         cName:"nav-links-mobile"
     },
 ]
