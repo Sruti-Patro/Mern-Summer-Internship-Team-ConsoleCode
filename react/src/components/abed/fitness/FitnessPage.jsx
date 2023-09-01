@@ -2,12 +2,15 @@ import React from "react";
 
 import {Image} from "@nextui-org/react";
 import EliteCards from "./components/EliteCards";
+import Navbar from "../../sruti/navbar/Navbar";
+import TopFooter from "../../sruti/footer/TopFooter";
+import Footer from "../../sruti/footer/Footer";
 
 
 function FitnessPage() {
     return(
         <>
-      
+        <Navbar/>
         <div>
         <Image
         width={1600}
@@ -16,6 +19,8 @@ function FitnessPage() {
       /> 
       </div>
       <EliteCards/>
+      <TopFooter/>
+      <Footer/>
       </>
       
      

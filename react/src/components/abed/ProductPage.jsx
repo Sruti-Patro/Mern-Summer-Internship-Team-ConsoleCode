@@ -4,16 +4,19 @@ import PantsList from "./components/PantsList";
 import FootWear from "./components/FootWears";
 import FAQ from "./components/FAQ";
 import HeroSlider from "./components/HeroSlider";
-
+import StoreNav from "../sruti/navbar/StoreNav";
 
 function ProductPage(){
 return( 
     <>
-        <HeroSlider/>
+    <StoreNav/>
+       <div>
+       <HeroSlider/>
         <TShirtList/>
         <PantsList/>
         <FootWear/>
         <FAQ/>
+       </div>
     
     </>
 

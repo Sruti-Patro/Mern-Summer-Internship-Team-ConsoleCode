@@ -29,6 +29,12 @@
       "email": "ece.22becc44@silicon.ac.in",
       "pass": "111",
       "id": 5
+    },
+    {
+      "name": "a",
+      "email": "patrocorgi29@gmail.com",
+      "pass": "12",
+      "id": 6
     }
   ],
   "Flist": [
@@ -812,7 +818,5 @@
       "category": "Men"
     }
   ],
-  "currUser":[
-    
-  ]
+  "currUser": []
 }

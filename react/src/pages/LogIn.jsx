@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./SignLog.css";
 import { useNavigate } from "react-router";
+import Navbar from "../components/sruti/navbar/Navbar";
 
 function LogIn() {
   const [user, setUser] = useState({});
@@ -57,6 +58,7 @@ function LogIn() {
 
   return (
     <>
+    <Navbar/>
       <div className="container">
         <div className="header">
           <div className="text">Log In</div>
@@ -84,7 +86,7 @@ function LogIn() {
           Do not have an account? create one by signing up
         </div>
         <div className="submit-container">
-          <button className="submit" onClick={() => navigate("/signup")}>
+          <button className="submit" onClick={() => navigate("/sign")}>
             Sign Up
           </button>
           <div className="submit" onClick={onSubmit}>

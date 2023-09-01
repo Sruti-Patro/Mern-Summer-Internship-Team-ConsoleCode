@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./SignLog.css";
 import { useNavigate } from "react-router";
+import Navbar from "../components/sruti/navbar/Navbar";
 
 function SignUp() {
   const [user, setUser] = useState([]);
@@ -43,6 +44,7 @@ function SignUp() {
 
   return (
     <>
+    <Navbar/>
       <div className="container">
         <div className="header">
           <div className="text">Sign Up</div>
@@ -76,7 +78,9 @@ function SignUp() {
         </div>
         <div className="forgot-password">Already have an account? Login</div>
         <div className="submit-container">
-          <button className="submit" onClick={()=>navigate("/login")}>Log In</button>
+          <button className="submit" onClick={() => navigate("/login")}>
+            Log In
+          </button>
           <div className="submit" onClick={onSubmit}>
             Submit
           </div>

@@ -7,7 +7,7 @@ import ViewAllFootWear from "./ViewAllFootWear"
 function AllRoutesStore() {
   return (
     <Routes>
-      <Route path="/" element={<ProductPage/>}></Route>
+      <Route path="/store" element={<ProductPage/>}></Route>
       <Route path="/tshirt" element={<ViewAllTshirt/>}></Route>
       <Route path="/tights" element={<ViewAllPants/>}></Route>
       <Route path="/footwear" element={<ViewAllFootWear/>}></Route>
